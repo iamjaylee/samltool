@@ -1,0 +1,14 @@
+<%= form_tag fingerprint_path do %>
+  <%= text_area_tag :content, nil, rows: 10, cols: 50 %>
+  <%= submit_tag "Calculate Fingerprint" %>
+<% end %>
+
+<%= form_tag encode_path do %>
+  <%= text_area_tag :content, nil, rows: 10, cols: 50 %>
+  <%= submit_tag "Base64 Encode" %>
+<% end %>
+
+<%= form_tag decode_path do %>
+  <%= text_area_tag :content, nil, rows: 10, cols: 50 %>
+  <%= submit_tag "Base64 Decode" %>
+<% end %>
